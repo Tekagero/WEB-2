@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="shortcut icon" href="img/smile.ico" type="image/ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Объявления</title>
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+
+    <div class="signInWrapper modalWrapper">
+        <div class="signInModal modal">
+            <span class="signInClose modalClose">&times;</span>
+            <div class="signInContent">
+                <div class="title">Вход</div>
+                <form class="signInForm" action="#" method="POST">
+                    <input class="signInLogin" type="text" placeholder="логин" minlength="5" maxlength="15" pattern="[a-zA-Z]{5,15}" required>
+                    <input class="signInPassword" type="password" placeholder="пароль" minlength="5" maxlength="15" pattern="[a-zA-Z0-9_]{5,15}" required>
+                    <a class="signInOpenSignUp">Зарегистрироваться</a>
+                    <button class="signInButton btn" type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="signUpWrapper modalWrapper">
+        <div class="signUpModal modal">
+            <span class="signUpClose modalClose">&times;</span>
+            <div class="signUpContent">
+                <div class="title">Регистрация</div>
+                <form class="signUpForm" action="#" method="POST">
+                    <input class="signUpLogin" type="text" placeholder="логин" name="login" minlength="5" maxlength="15" pattern="[a-zA-Z]{5,15}" required>
+                    <input class="signUpPassword" type="password" placeholder="пароль" name="password" minlength="5" maxlength="15" pattern="[a-zA-Z0-9_]{5,15}" required>
+                    <input class="signUpRepeatPassword" type="password" placeholder="повторый пароль" name="repeatPassword" minlength="5" maxlength="15" pattern="[a-zA-Z]{5,15}" required>
+                    <input class="signUpEmail" type="email" placeholder="email" name="email" minlength="4" maxlength="15" pattern="[a-zA-Z_.]{2,10}@[a-zA-Z_.]{2,10}.[a-zA-Z]{2,5}" required>
+                    <input class="signUpPhone" type="tel" placeholder="номер телефона" name="phone" minlength="11" maxlength="11" pattern="[0-9]{11}">
+                    <div class="checkboxWrapper">
+                        <input class="signUpAgree" type="checkbox" name="isAgreeWithPrivatePolicy" required>
+                        <span>Согласен с политикой</span>
+                    </div>
+                    <button class="signUpButton btn" type="submit">Зарегистрироваться</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="headerName">
+                    <a class="hrefNameSite" href="">Сайт объявлений</a>
+                </div>
+                <div class="headerButton">
+                    <button class="headerSignInButton">Войти</button>
+                    <button class="headerSignUpButton">Регистрация</button>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="advertising">
+                    <a href="">
+                        <p><img class="photo" src="img/math.jpg" alt="Math"></p>
+                    </a>
+                    <div class="advertisingInformation">
+                        <span class="advertisingName">Репетитор по математике</span>
+                        <span class="price">цена: от 400 ₽</span>
+                    </div>
+                </div>
+                <div class="advertising">
+                    <a href="">
+                        <p><img class="photo" src="img/car.jpg" alt="car"></p>
+                    </a>
+                    <div class="advertisingInformation">
+                        <span class="advertisingName">Ремонт автомобилей</span>
+                        <span class="price">цена: от 1000 ₽</span>
+                    </div>
+                </div>
+                <div class="advertising">
+                    <a href="">
+                        <p><img class="photo" src="img/eat.jpg" alt="eat"></p>
+                    </a>
+                    <div class="advertisingInformation">
+                        <span class="advertisingName">Доставка еды</span>
+                        <span class="price">цена: от 500 ₽</span>
+                    </div>
+                </div>
+                <div class="advertising">
+                    <a href="">
+                        <p><img class="photo" src="img/airplane.jpg" alt="airplane"></p>
+                    </a>
+                    <div class="advertisingInformation">
+                        <span class="advertisingName">Авиаперелёты</span>
+                        <span class="price">цена: от 3000 ₽</span>
+                    </div>
+                </div>
+                <div class="advertising">
+                    <a href="">
+                        <p><img class="photo" src="img/inst.png" alt="inst"></p>
+                    </a>
+                    <div class="advertisingInformation">
+                        <span class="advertisingName">Реклама в инстаграмм</span>
+                        <span class="price">цена: от 100 ₽</span>
+                    </div>
+                </div>
+                <div class="advertising">
+                    <a href="">
+                        <p><img class="photo" src="img/game.jpg" alt="game"></p>
+                    </a>
+                    <div class="advertisingInformation">
+                        <span class="advertisingName">Игровой клуб</span>
+                        <span class="price">цена: от 50 ₽</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <span class="footerAuthor">Работу выполнил Александр Деменьтев ПИ-19 </span>
+            <span class="footerContacts">
+                <p class="footerName">Контакты:</p>
+                <a href="https://vk.com/alddementew">
+                    <p><img class="footerVkIcon" src="img/vk.svg" alt="" width="30" height="30" /></p>
+                </a>
+                <a href="https://github.com/Tekagero">
+                    <img class="footerGithubIcon" src="img/git.svg" alt="" width="30" height="30"/>
+                </a>
+                <a href="https://t.me/alddementew">
+                    <img class="footerTelegramIcon" src="img/tg.svg" alt="" width="30" height="30"/>
+                </a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>
